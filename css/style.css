@@ -10,13 +10,67 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-size: 40pt;
 }
+h2 {
+    border:5px solid #DAB38C;
+    color: #3254DB;
+    padding: 5px;
+    box-shadow: 5px 5px 5px black;
+}
 
 header {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #DAB38C;
+    box-shadow: 5px 5px 5px black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #about_me {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#about_me ul li:nth-child(odd) {
+    color: #3254DB;
+    border: 4px solid #CA80E0;
+    margin: 5px;
+    padding: 2px;
+}
+
+#about_me ul li:nth-child(even) {
+    border-radius: 8px;
+    border: 4px solid #3254DB;
+    margin: 5px;
+    padding: 2px;
+}
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and(min-width:40em) {
+    body {
+        max-width: 100%;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    figure {
+        max-width: 80%;
+        align-items: center;
+        flex-direction: column;
+        display: inline;
+    }
 }
